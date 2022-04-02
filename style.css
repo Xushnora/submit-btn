@@ -1,0 +1,109 @@
+body {
+    background-color: rgba(58, 58, 189, 0.932);
+}
+
+p {
+    cursor: pointer;
+}
+
+.container {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 90px;
+}
+
+.box-form {
+    padding: 30px;
+    border: 1px solid black;
+    width: 90%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+
+
+.left-btns {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.btn-choose {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 70%;
+    border: none;
+    background-color: transparent;
+    opacity: 0.2;
+}
+
+.btn-numb {
+    margin-right: 15px;
+    font-weight: 600;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    /* opacity: 0.2; */
+}
+
+.btn-desc {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.active-btn{
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 70%;
+    border: none;
+    background-color: transparent;
+}
+
+/* .active-btn .btn-numb{
+    opacity: 1;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: rgb(1, 175, 255);
+    color: #fff;
+} */
+
+.title-content {
+    width: 60%;
+}
+
+.title-box {
+    display: block;
+}
+
+.desc-box {
+    display: none;
+}
+
+.happy-box {
+    display: none;
+}
+
+.result-box {
+    display: none;
+}
+
+.texts {
+    margin-bottom: 55px;
+    font-size: 23px;
+    color: blueviolet;
+}
+
+.buttonAll {
+    border: 1px dashed blueviolet;
+    background-color: #fff;
+    color: blueviolet;
+    padding: 3px 10px;
+}
+
+
