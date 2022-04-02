@@ -1,5 +1,5 @@
 body {
-    background-color: rgba(58, 58, 189, 0.932);
+    background-color: rgba(84, 14, 131, 0.932);
 }
 
 p {
@@ -96,7 +96,7 @@ p {
 .texts {
     margin-bottom: 55px;
     font-size: 23px;
-    color: blueviolet;
+    color: rgb(37, 36, 37);
 }
 
 .buttonAll {
@@ -104,6 +104,10 @@ p {
     background-color: #fff;
     color: blueviolet;
     padding: 3px 10px;
+}
+
+.result-title {
+    color: blueviolet;
 }
 
 
