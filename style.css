@@ -101,13 +101,24 @@ p {
 
 .buttonAll {
     border: 1px dashed blueviolet;
-    background-color: #fff;
-    color: blueviolet;
+    background-color: blueviolet;
+    color: #fff;
     padding: 3px 10px;
 }
 
 .result-title {
     color: blueviolet;
+}
+
+.actived {
+    width: 30px;
+    height: 30px;
+    background-color: blueviolet;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    align-self: center;
+    justify-content: center;
 }
 
 

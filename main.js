@@ -5,6 +5,7 @@ let elTitleBtn = document.querySelector('.title-btn');
 let elDescBtn = document.querySelector('.desc-btn')
 let elHappyBack = document.querySelector('.happy-btn-back');
 let elDescBack = document.querySelector('.desc-btn-back');
+let elNumbSpan = document.querySelectorAll('.btn-numb');
 
 // first btn
 chooseBtns[0].addEventListener('click', ()=> {
@@ -15,6 +16,9 @@ chooseBtns[0].addEventListener('click', ()=> {
     elBoxs[1].style.display = 'none';
     elBoxs[2].style.display = 'none';
     elBoxs[3].style.display = 'none';
+    elNumbSpan[0].classList.add('actived');
+    elNumbSpan[1].classList.remove('actived');
+    elNumbSpan[2].classList.remove('actived');
 })
 
 // second btn
@@ -26,6 +30,9 @@ chooseBtns[1].addEventListener('click', ()=> {
     elBoxs[0].style.display = 'none';
     elBoxs[2].style.display = 'none';
     elBoxs[3].style.display = 'none';
+    elNumbSpan[1].classList.add('actived');
+    elNumbSpan[0].classList.add('actived');
+    elNumbSpan[2].classList.remove('actived');
 })
 
 // third btn
@@ -37,6 +44,9 @@ chooseBtns[2].addEventListener('click', ()=> {
     elBoxs[0].style.display = 'none';
     elBoxs[1].style.display = 'none';
     elBoxs[3].style.display = 'none';
+    elNumbSpan[0].classList.add('actived');
+    elNumbSpan[1].classList.add('actived');
+    elNumbSpan[2].classList.add('actived');
 })
 
 // yes, button finally
@@ -58,6 +68,9 @@ elHappyBack.addEventListener('click', () =>{
     elBoxs[0].style.display = 'none';
     elBoxs[2].style.display = 'none';
     elBoxs[3].style.display = 'none';
+    elNumbSpan[1].classList.add('actived');
+    elNumbSpan[0].classList.add('actived');
+    elNumbSpan[2].classList.remove('actived');
 })
 
 // subtitle btn
@@ -70,6 +83,9 @@ elTitleBtn.addEventListener('click', () => {
     chooseBtns[1].classList.add('active-btn');
     chooseBtns[0].classList.add('active-btn');
     chooseBtns[2].classList.remove('active-btn');
+    elNumbSpan[1].classList.add('actived');
+    elNumbSpan[0].classList.add('actived');
+    elNumbSpan[2].classList.remove('actived');
 })
 
 // description btn
@@ -81,6 +97,9 @@ elDescBtn.addEventListener('click', ()=> {
     chooseBtns[2].classList.add('active-btn');
     chooseBtns[0].classList.add('active-btn');
     chooseBtns[1].classList.add('active-btn');
+    elNumbSpan[0].classList.add('actived');
+    elNumbSpan[1].classList.add('actived');
+    elNumbSpan[2].classList.add('actived');
 })
 
 // back button
@@ -92,4 +111,7 @@ elDescBack.addEventListener('click', () => {
     elBoxs[1].style.display = 'none';
     elBoxs[2].style.display = 'none';
     elBoxs[3].style.display = 'none';
+    elNumbSpan[0].classList.add('actived');
+    elNumbSpan[1].classList.remove('actived');
+    elNumbSpan[2].classList.remove('actived');
 })
