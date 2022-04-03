@@ -8,6 +8,7 @@ let elDescBack = document.querySelector('.desc-btn-back');
 let elNumbSpan = document.querySelectorAll('.btn-numb');
 
 // first btn
+let count = 1;
 chooseBtns[0].addEventListener('click', ()=> {
     chooseBtns[0].classList.add('active-btn');
     chooseBtns[1].classList.remove('active-btn');
@@ -19,6 +20,8 @@ chooseBtns[0].addEventListener('click', ()=> {
     elNumbSpan[0].classList.add('actived');
     elNumbSpan[1].classList.remove('actived');
     elNumbSpan[2].classList.remove('actived');
+    count = 2;
+
 })
 
 // second btn
@@ -33,20 +36,27 @@ chooseBtns[1].addEventListener('click', ()=> {
     elNumbSpan[1].classList.add('actived');
     elNumbSpan[0].classList.add('actived');
     elNumbSpan[2].classList.remove('actived');
+    count = 3;
 })
+
+console.log(count);
 
 // third btn
 chooseBtns[2].addEventListener('click', ()=> {
-    chooseBtns[2].classList.add('active-btn');
-    chooseBtns[0].classList.add('active-btn');
-    chooseBtns[1].classList.add('active-btn');
-    elBoxs[2].style.display = 'block';
-    elBoxs[0].style.display = 'none';
-    elBoxs[1].style.display = 'none';
-    elBoxs[3].style.display = 'none';
-    elNumbSpan[0].classList.add('actived');
-    elNumbSpan[1].classList.add('actived');
-    elNumbSpan[2].classList.add('actived');
+    if (count == 3) {
+        chooseBtns[2].classList.add('active-btn');
+        chooseBtns[0].classList.add('active-btn');
+        chooseBtns[1].classList.add('active-btn');
+        elBoxs[2].style.display = 'block';
+        elBoxs[0].style.display = 'none';
+        elBoxs[1].style.display = 'none';
+        elBoxs[3].style.display = 'none';
+        elNumbSpan[0].classList.add('actived');
+        elNumbSpan[1].classList.add('actived');
+        elNumbSpan[2].classList.add('actived');
+    } else {
+        alert("Yo'l bo'lsin 🙂")
+    }
 })
 
 // yes, button finally
